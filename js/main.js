@@ -122,6 +122,14 @@
         h('p', { class: 'exp__text', text: e[lang].text }))));
   }
 
+  // ── habilidades: lista técnica y fortalezas ──
+  function skillsSection() {
+    const S = SKILLS[lang];
+    const list = h('ul', { class: 'skills__list' }, S.list.map(item => h('li', { text: item })));
+    const strengths = h('ul', { class: 'skills__strengths-list' }, S.strengths.items.map(item => h('li', { text: item })));
+    return { list, strengths };
+  }
+
   // ── bloque de IA local: por qué, qué se despliega y cómo se usa ──
   function flow(f) {
     const L = f[lang];
@@ -186,6 +194,11 @@
         lab(PROJECTS.filter(x => x.pillar === p.id && x.lab)))));
 
     $('.exp__list').replaceChildren(...experience());
+
+    // habilidades
+    const { list, strengths } = skillsSection();
+    $('.skills__list').replaceChildren(...list.children);
+    $('.skills__strengths-list').replaceChildren(...strengths.children);
 
     // CV: en la portada y como primer canal del pie; sin archivo no se muestra
     document.querySelectorAll('[data-cv]').forEach(a => { a.hidden = !CV; if (CV) a.href = CV; });

@@ -20,6 +20,40 @@ window.PILLARS = [
     en: { name: 'Software', blurb: 'Software tools and utilities: scripts, data processing and solutions to concrete technical problems.' } },
 ];
 
+// ───────────── HABILIDADES (desde Datos_Cv.txt) ─────────────
+window.SKILLS = {
+  es: {
+    title: 'Habilidades técnicas',
+    subtitle: 'Nivel Junior — en crecimiento constante',
+    list: ['Unity development', 'Unreal Engine (introductorio)', 'Lógica de programación', 'C#', 'C++'],
+    strengths: {
+      title: 'Fortalezas clave',
+      items: [
+        'Ideas creativas e innovadoras de gameplay',
+        'Aprendizaje rápido',
+        'Alta adaptabilidad',
+        'Liderazgo',
+        'Colaboración en equipo',
+      ],
+    },
+  },
+  en: {
+    title: 'Technical Skills',
+    subtitle: 'Junior level — constantly growing',
+    list: ['Unity development', 'Introductory Unreal Engine', 'Programming logic', 'C#', 'C++'],
+    strengths: {
+      title: 'Key Strengths',
+      items: [
+        'Creative & innovative gameplay ideas',
+        'Fast learner',
+        'High adaptability',
+        'Leadership',
+        'Strong team collaboration',
+      ],
+    },
+  },
+};
+
 window.PROJECTS = [
   // ───────────── JUEGOS ─────────────
   { id: 'protocolo-alfa', pillar: 'juegos', featured: true, year: '2026',
@@ -192,31 +226,33 @@ window.PROJECTS = [
 // ───────────── IA LOCAL ─────────────
 window.AI_BLOCK = {
   es: {
-    lead: 'Enfoque en desarrollo local y medible. Cada decisión técnica se valida con datos reales, no con suposiciones.',
+    lead: 'Enfoque en desarrollo de videojuegos y software, con énfasis en la creatividad y el trabajo en equipo. Cada proyecto es una oportunidad para prototipar mecánicas innovadoras y llevar ideas creativas a juegos reales.',
     why: [
-      ['Código limpio', 'Cada proyecto tiene estructura clara, nombres expresivos y commits con propósito.'],
-      ['Medir antes de afirmar', 'Antes de elegir una herramienta o patrón, lo pruebo con un caso real y anoto el resultado.'],
-      ['Control de versiones', 'Git como columna vertebral: ramas, merges y releases documentados.'],
+      ['Creatividad', 'Ideas innovadoras de gameplay y mecánicas únicas que destacan.'],
+      ['Aprendizaje rápido', 'Me adapto fácilmente a nuevas tecnologías y demandas del proyecto.'],
+      'Trabajo en equipo',
+      'Colaboración fluida y liderazgo cuando el equipo necesita dirección.',
     ],
     stackTitle: 'Tecnologías principales',
     flowsTitle: 'Flujo de desarrollo',
-    hw: 'Estación de desarrollo local con .NET SDK, Unity Hub y Git.',
+    hw: 'Estación de desarrollo local con Unity Hub, Visual Studio y Git.',
   },
   en: {
-    lead: 'Local and measurable development focus. Every technical decision is validated with real data, not assumptions.',
+    lead: 'Focus on game and software development, with an emphasis on creativity and teamwork. Every project is an opportunity to prototype innovative mechanics and bring creative ideas to real games.',
     why: [
-      ['Clean code', 'Every project has clear structure, expressive names and purposeful commits.'],
-      ['Measure before claiming', 'Before picking a tool or pattern, I test it on a real case and write down the result.'],
-      ['Version control', 'Git as the backbone: branches, merges and documented releases.'],
+      ['Creativity', 'Innovative gameplay ideas and unique mechanics that stand out.'],
+      ['Fast learning', 'I adapt easily to new technologies and project demands.'],
+      'Teamwork',
+      'Smooth collaboration and leadership when the team needs direction.',
     ],
     stackTitle: 'Main technologies',
     flowsTitle: 'Development flow',
-    hw: 'Local development workstation with .NET SDK, Unity Hub and Git.',
+    hw: 'Local development workstation with Unity Hub, Visual Studio and Git.',
   },
   stack: [
-    { es: 'Videojuegos', en: 'Games', items: ['C#', 'Unity', 'Visual Studio', 'Git'] },
-    { es: 'Software', en: 'Software', items: ['C#', '.NET', 'Wolfram Language', 'Git'] },
-    { es: 'Web', en: 'Web', items: ['HTML5', 'CSS3', 'JavaScript', 'GitHub Pages'] },
+    { es: 'Videojuegos', en: 'Games', items: ['Unity', 'Unreal Engine (intro)', 'C#', 'C++', 'Git'] },
+    { es: 'Software', en: 'Software', items: ['C#', 'Lógica de programación', 'GitHub', 'Visual Studio'] },
+    { es: 'Creatividad', en: 'Creativity', items: ['Diseño de gameplay', 'Pitching de ideas', 'Prototipado', 'Liderazgo de equipo'] },
   ],
   flows: [
     {
@@ -263,11 +299,11 @@ window.EXPERIENCE = [
       text: 'Desarrollo de videojuegos 2D y herramientas de software en C# y Unity. Proyectos académicos y personales publicados en GitHub.' },
     en: { role: 'C# / Unity Developer (self-taught)',
       text: '2D game development and software tools in C# and Unity. Academic and personal projects published on GitHub.' } },
-  { org: 'Tecsup', when: { es: 'En curso', en: 'Ongoing' },
-    es: { role: 'Estudiante de Desarrollo de Software',
-      text: 'Formación en programación orientada a objetos, desarrollo de videojuegos y arquitectura de software con C# y Unity.' },
-    en: { role: 'Software Development Student',
-      text: 'Training in object-oriented programming, video game development and software architecture with C# and Unity.' } },
+  { org: 'Universidad / Instituto', when: { es: '4to semestre', en: '4th semester' },
+    es: { role: 'Estudiante de Game and Simulator Design & Development',
+      text: 'Curso en diseño y desarrollo de videojuegos y simuladores, con formación en Ciencias de la Computación. Actualmente expando mis habilidades hacia Unreal Engine y C++.' },
+    en: { role: 'Game and Simulator Design & Development Student',
+      text: 'Coursework in game and simulator design and development, with background in Computer Science. Currently expanding skills into Unreal Engine and C++.' } },
 ];
 
 window.UI = {
@@ -275,8 +311,8 @@ window.UI = {
     'nav.juegos': 'Juegos', 'nav.web': 'Web', 'nav.software': 'Software', 'nav.exp': 'Experiencia', 'nav.method': 'Método',
     'hero.cv': 'Descargar CV', 'exp.title': 'Experiencia',
     'card.role': 'Mi parte', 'lab.title': 'Lab / En curso', 'lab.note': 'prototipos sin capturas todavía',
-    'hero.role': 'C# · Unity · Game & Software Developer — Perú',
-    'hero.lead': 'Desarrollador de software y videojuegos enfocado en C# y Unity. Proyectos académicos, juegos 2D y herramientas de desarrollo.',
+    'hero.role': 'Junior Game Developer & Creative Mind · Unity & Unreal',
+    'hero.lead': '¡Hola! Soy Victor (TamaringoExpress), estudiante de Game and Simulator Design & Development en mi 4to semestre, con formación en Ciencias de la Computación. Actualmente desarrollo en Unity y expando mis habilidades hacia Unreal Engine. Mi mayor fortaleza está en el lado creativo: proponer ideas innovadoras, diseñar mecánicas de juego únicas y mantener al equipo motivado para llevar los proyectos hasta el final.',
     'hero.cta': 'Ver trabajos',
     'loom.label': 'Tejido nº',
     'loom.note': 'Se teje con código a partir de la fecha de hoy.',
@@ -287,6 +323,9 @@ window.UI = {
     'link.video': 'Ver tráiler', 'player.close': 'Cerrar',
     'card.private': 'Código privado', 'card.media': 'capturas y vídeos',
     'detail.prev': 'Anterior', 'detail.next': 'Siguiente',
+    'skills.title': 'Habilidades técnicas',
+    'skills.subtitle': 'Nivel Junior — en crecimiento constante',
+    'skills.strengths.title': 'Fortalezas clave',
     'method.title': 'Cómo trabajo',
     'method.build.h': 'Construir con propósito',
     'method.build.p': 'Cada funcionalidad nace de un issue con criterios claros. Desarrollo en ciclos cortos: escribo, compilo y pruebo para detectar problemas temprano.',
@@ -295,15 +334,15 @@ window.UI = {
     'method.share.h': 'Compartir el conocimiento',
     'method.share.p': 'Todo el código está en GitHub, documentado y versionado. Creo en el software abierto y en aprender construyendo en público.',
     'footer.title': 'Hablemos',
-    'footer.p': '¿Un juego en Unity, una herramienta en C# o un proyecto de software? Escríbeme por cualquiera de estos canales.',
+    'footer.p': '¿Un juego en Unity o Unreal, una herramienta en C# o un proyecto creativo? Escríbeme por cualquiera de estos canales.',
     'footer.made': 'Hecho a mano, sin plantillas. El tejido de arriba cambia cada día.',
   },
   en: {
     'nav.juegos': 'Games', 'nav.web': 'Web', 'nav.software': 'Software', 'nav.exp': 'Experience', 'nav.method': 'Method',
     'hero.cv': 'Download CV', 'exp.title': 'Experience',
     'card.role': 'My part', 'lab.title': 'Lab / In progress', 'lab.note': 'prototypes, no footage yet',
-    'hero.role': 'C# · Unity · Game & Software Developer — Peru',
-    'hero.lead': 'Software and game developer focused on C# and Unity. Academic projects, 2D games and development tools.',
+    'hero.role': 'Junior Game Developer & Creative Mind · Unity & Unreal',
+    'hero.lead': "Hi! I'm Victor (TamaringoExpress), a Game and Simulator Design & Development student currently in my 4th semester, with background coursework in Computer Science. I currently build in Unity and am actively expanding my skills into Unreal Engine. My greatest strength is on the creative side: pitching innovative ideas, designing unique gameplay mechanics, and keeping the team motivated to bring projects across the finish line.",
     'hero.cta': 'See the work',
     'loom.label': 'Weave no.',
     'loom.note': 'Woven by code from today\'s date.',
@@ -314,6 +353,9 @@ window.UI = {
     'link.video': 'Watch trailer', 'player.close': 'Close',
     'card.private': 'Private code', 'card.media': 'shots & videos',
     'detail.prev': 'Previous', 'detail.next': 'Next',
+    'skills.title': 'Technical Skills',
+    'skills.subtitle': 'Junior level — constantly growing',
+    'skills.strengths.title': 'Key Strengths',
     'method.title': 'How I work',
     'method.build.h': 'Build with purpose',
     'method.build.p': 'Every feature starts from an issue with clear criteria. Incremental development in short cycles: write, compile, test to catch problems early.',
@@ -322,7 +364,7 @@ window.UI = {
     'method.share.h': 'Share knowledge',
     'method.share.p': 'All code is on GitHub, documented and versioned. I believe in open source and learning by building in public.',
     'footer.title': 'Let\'s talk',
-    'footer.p': 'A Unity game, a C# tool or a software project? Reach me on any of these channels.',
+    'footer.p': 'A Unity or Unreal game, a C# tool or a creative project? Reach me on any of these channels.',
     'footer.made': 'Handmade, no templates. The weave up top changes every day.',
   },
 };

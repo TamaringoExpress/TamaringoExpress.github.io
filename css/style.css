@@ -116,6 +116,28 @@ a { color: inherit; }
 .threads__list a:hover .threads__name { color: var(--c); }
 @media (max-width: 560px) { .threads__list { grid-template-columns: 1fr; gap: 14px; } }
 
+/* ── Habilidades ─────────────────────────────────────────────────── */
+.skills { padding-block: 72px 24px; }
+.skills__subtitle { margin: 0 0 28px; max-width: 52ch; color: var(--lana-2); font-size: clamp(18px, 1.6vw, 21px); line-height: 1.5; }
+.skills__list { list-style: none; margin: 0 0 40px; padding: 0; display: flex; flex-wrap: wrap; gap: 14px; }
+.skills__list li {
+  font: 500 14px/1 var(--f-mono); text-transform: uppercase; letter-spacing: .06em;
+  color: var(--lana); padding: 10px 16px; border: 1px solid var(--hilo); border-radius: 3px; background: var(--anil-2);
+}
+.skills__strengths { border-top: 1px solid var(--hilo); padding-top: 32px; }
+.skills__strengths-title { margin: 0 0 16px; font: 400 clamp(34px, 4vw, 48px)/1 var(--f-display); color: var(--c, var(--lana)); }
+.skills__strengths-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 20px; }
+.skills__strengths-list li {
+  font: 400 16px/1.5 var(--f-body); color: var(--lana-2); padding-left: 20px; position: relative;
+}
+.skills__strengths-list li::before {
+  content: '▸'; position: absolute; left: 0; top: 1px; color: var(--c); font-weight: 700;
+}
+@media (max-width: 640px) {
+  .skills__list { gap: 10px; }
+  .skills__list li { font-size: 12px; padding: 8px 12px; }
+}
+
 /* ── Secciones por pilar ─────────────────────────────────────────── */
 .pillar { padding-block: 72px 24px; }
 .pillar__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 40px; margin-bottom: 18px; }
