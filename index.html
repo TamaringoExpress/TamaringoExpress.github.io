@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TamaringoExpress · C# / Unity Game & Software Developer</title>
+<meta name="description" content="TamaringoExpress — Desarrollador de software y videojuegos en C# y Unity. Proyectos académicos, juegos 2D y herramientas de software.">
+<meta property="og:title" content="TamaringoExpress · C# / Unity Game & Software Developer">
+<meta property="og:description" content="Desarrollador de software y videojuegos con enfoque en C#, Unity y desarrollo de software.">
+<meta property="og:image" content="https://tamaringoexpress.github.io/img/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#11163A">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Jersey+15&family=Martian+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#trabajos" data-i18n="hero.cta">Ver trabajos</a>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="nav__brand" href="#top" aria-label="TamaringoExpress, inicio">
+      <canvas class="nav__mark" width="20" height="20" aria-hidden="true"></canvas>
+      <span>TamaringoExpress</span>
+    </a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#juegos" data-i18n="nav.juegos">Juegos</a>
+      <a href="#web" data-i18n="nav.web">Web</a>
+      <a href="#software" data-i18n="nav.software">Software</a>
+      <a href="#experiencia" data-i18n="nav.exp">Experiencia</a>
+      <a href="#metodo" data-i18n="nav.method">Método</a>
+    </nav>
+    <button class="lang" type="button" aria-label="Cambiar idioma / Change language">
+      <span data-lang="es">ES</span><span aria-hidden="true">/</span><span data-lang="en">EN</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-name">
+    <canvas class="loom" aria-hidden="true"></canvas>
+    <div class="hero__panel">
+      <p class="hero__role" data-i18n="hero.role">C# · Unity · Game & Software Developer — Perú</p>
+      <h1 class="hero__name" id="hero-name">Tamaringo<br>Express</h1>
+      <p class="hero__lead" data-i18n="hero.lead">Desarrollador de software y videojuegos enfocado en C# y Unity. Proyectos académicos, juegos 2D y herramientas de desarrollo.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#trabajos" data-i18n="hero.cta">Ver trabajos</a>
+        <a class="btn btn--ghost" href="https://github.com/TamaringoExpress" rel="me">GitHub ↗</a>
+      </div>
+    </div>
+    <div class="seed">
+      <p><span data-i18n="loom.label">Tejido nº</span> <b class="seed__n">—</b></p>
+      <p class="seed__note" data-i18n="loom.note">Se teje con código a partir de la fecha de hoy.</p>
+      <button class="seed__btn" type="button" data-i18n="loom.again">Tejer otro</button>
+    </div>
+  </section>
+
+  <section class="threads wrap" id="trabajos" aria-labelledby="threads-title">
+    <h2 class="visually-hidden" id="threads-title" data-i18n="threads.title">Tres hilos</h2>
+    <ol class="threads__list"></ol>
+  </section>
+
+  <div class="pillars"></div>
+
+  <section class="exp wrap" id="experiencia" aria-labelledby="exp-title">
+    <h2 class="section__title" id="exp-title" data-i18n="exp.title">Experiencia</h2>
+    <ol class="exp__list"></ol>
+  </section>
+
+  <section class="method wrap" id="metodo" aria-labelledby="method-title">
+    <h2 class="section__title" id="method-title" data-i18n="method.title">Cómo trabajo</h2>
+    <div class="method__grid">
+      <article>
+        <h3 data-i18n="method.build.h"></h3>
+        <p data-i18n="method.build.p"></p>
+      </article>
+      <article>
+        <h3 data-i18n="method.test.h"></h3>
+        <p data-i18n="method.test.p"></p>
+      </article>
+      <article>
+        <h3 data-i18n="method.share.h"></h3>
+        <p data-i18n="method.share.p"></p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contacto">
+  <div class="wrap">
+    <h2 class="foot__title" data-i18n="footer.title">Hablemos</h2>
+    <p class="foot__p" data-i18n="footer.p"></p>
+    <ul class="foot__links"></ul>
+    <p class="foot__made" data-i18n="footer.made"></p>
+  </div>
+</footer>
+
+<dialog class="detail" aria-labelledby="detail-title">
+  <div class="detail__bar">
+    <h2 class="detail__title" id="detail-title"></h2>
+    <button class="detail__close" type="button" data-i18n="player.close">Cerrar</button>
+  </div>
+  <div class="detail__stage"></div>
+  <div class="detail__thumbs"></div>
+  <div class="detail__body"></div>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/loom.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
